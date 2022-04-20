@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TimeCard xsi="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="http://ns.hr-xml.org/2007-04-15 ../../SIDES/TimeCardAdditionalData.xsd" xmlns="http://ns.hr-xml.org/2007-04-15">
+  <Id idOwner="StaffingCustomer">
+    <IdValue>SOLT0000000102</IdValue>
+  </Id>
+  <ReportedResource>
+    <Person>
+      <Id idOwner="StaffingCustomer">
+        <IdValue>R001600</IdValue>
+      </Id>
+      <PersonName>
+        <FormattedName />
+        <LegalName />
+        <GivenName />
+        <PreferredGivenName />
+        <FamilyName />
+      </PersonName>
+    </Person>
+  </ReportedResource>
+  <ReportedTime status="">
+    <PeriodStartDate>2022-01-24T00:00:00Z</PeriodStartDate>
+    <PeriodEndDate>2022-01-30T00:00:00Z</PeriodEndDate>
+    <TimeInterval type="regular">
+      <StartDateTime>2022-01-25T00:00:00Z</StartDateTime>
+      <EndDateTime>2022-01-25T00:00:00Z</EndDateTime>
+      <Duration>8.77</Duration>
+      <RateOrAmount currency="EUR" type="HOURLY" multiplier="100.00" />
+    </TimeInterval>
+    <TimeInterval type="regular">
+      <StartDateTime>2022-01-26T00:00:00Z</StartDateTime>
+      <EndDateTime>2022-01-26T00:00:00Z</EndDateTime>
+      <Duration>6.25</Duration>
+      <RateOrAmount currency="EUR" type="HOURLY" multiplier="100.00" />
+    </TimeInterval>
+    <TimeInterval type="regular">
+      <StartDateTime>2022-01-27T00:00:00Z</StartDateTime>
+      <EndDateTime>2022-01-27T00:00:00Z</EndDateTime>
+      <Duration>5.12</Duration>
+      <RateOrAmount currency="EUR" type="HOURLY" multiplier="100.00" />
+    </TimeInterval>
+    <TimeInterval type="regular">
+      <StartDateTime>2022-01-28T00:00:00Z</StartDateTime>
+      <EndDateTime>2022-01-28T00:00:00Z</EndDateTime>
+      <Duration>7.78</Duration>
+      <RateOrAmount currency="EUR" type="HOURLY" multiplier="100.00" />
+    </TimeInterval>
+    <TimeInterval type="additional">
+      <StartDateTime>2022-01-29T00:00:00Z</StartDateTime>
+      <EndDateTime>2022-01-29T00:00:00Z</EndDateTime>
+      <Duration>6.25</Duration>
+      <RateOrAmount currency="EUR" type="HOURLY" multiplier="113.68" />
+    </TimeInterval>
+    <TimeInterval type="additional">
+      <StartDateTime>2022-01-29T00:00:00Z</StartDateTime>
+      <EndDateTime>2022-01-29T00:00:00Z</EndDateTime>
+      <Duration>2.62</Duration>
+      <RateOrAmount currency="EUR" type="HOURLY" multiplier="127.36" />
+    </TimeInterval>
+    <TimeInterval type="overtime">
+      <StartDateTime>2022-01-30T00:00:00Z</StartDateTime>
+      <EndDateTime>2022-01-30T00:00:00Z</EndDateTime>
+      <Duration>4.68</Duration>
+      <RateOrAmount currency="EUR" type="HOURLY" multiplier="200.80" />
+    </TimeInterval>
+    <TimeInterval type="additional">
+      <StartDateTime>2022-01-30T00:00:00Z</StartDateTime>
+      <EndDateTime>2022-01-30T00:00:00Z</EndDateTime>
+      <Duration>3.21</Duration>
+      <RateOrAmount currency="EUR" type="HOURLY" multiplier="200.80" />
+    </TimeInterval>
+  </ReportedTime>
+  <SubmitterInfo>
+    <Source>SolidEketen</Source>
+    <SubmittedDateTime>2022-02-11T14:42:04Z</SubmittedDateTime>
+  </SubmitterInfo>
+  <AdditionalData>
+    <StaffingAdditionalData>
+      <CustomerReportingRequirements>
+        <PurchaseOrderNumber />
+        <CostCenterCode />
+        <ProjectCode />
+      </CustomerReportingRequirements>
+      <ReferenceInformation>
+        <AssignmentId idOwner="StaffingCompany">
+          <IdValue>1000002070</IdValue>
+        </AssignmentId>
+      </ReferenceInformation>
+    </StaffingAdditionalData>
+  </AdditionalData>
+</TimeCard>

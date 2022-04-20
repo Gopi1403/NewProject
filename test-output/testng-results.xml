@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="78887" started-at="2022-04-13T12:04:13Z" finished-at="2022-04-13T12:05:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="78887" started-at="2022-04-13T12:04:13Z" finished-at="2022-04-13T12:05:32Z">
+      <class name="org.testng.CompareOnline">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:org.testng.CompareOnline@754ba872]" name="startTest" is-config="true" duration-ms="215" started-at="2022-04-13T12:04:13Z" finished-at="2022-04-13T12:04:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="comparing()[pri:0, instance:org.testng.CompareOnline@754ba872]" name="comparing" duration-ms="77905" started-at="2022-04-13T12:04:14Z" finished-at="2022-04-13T12:05:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comparing -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:org.testng.CompareOnline@754ba872]" name="endTest" is-config="true" duration-ms="740" started-at="2022-04-13T12:05:32Z" finished-at="2022-04-13T12:05:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- org.testng.CompareOnline -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
