@@ -37,9 +37,9 @@ Document doc2 = db.parse(new File("C:\\Users\\gopin\\Downloads\\SOLT0000008123-U
 boolean hasChildNodes = doc1.hasChildNodes();
 System.out.println(hasChildNodes);
 
-//Element elementById = doc1.getElementById("StaffingCustomer");
-//System.out.println(elementById);
-//
+Element elementById = doc1.getElementById("StaffingCustomer");
+System.out.println(elementById);
+
 //String localName = doc1.getLocalName();
 //System.out.println(localName);
 //
