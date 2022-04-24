@@ -13,7 +13,7 @@ public static void main(String[] args) throws InterruptedException {
 		
 		chromeBrowser();
 		launchUrl("https://www.corefiling.com/opensource/xmldiff/");
-		maxWindow();
+		
 		
 		
 		WebElement choosefile1 = driver.findElement(By.xpath("//input[@name='file1']"));

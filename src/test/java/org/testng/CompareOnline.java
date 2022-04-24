@@ -40,15 +40,15 @@ public class CompareOnline extends BaseClass {
 			
 			chromeBrowser();
 			launchUrl("https://www.corefiling.com/opensource/xmldiff/");
-			maxWindow();
+			
 		
 		WebElement choosefile1 = driver.findElement(By.xpath("//input[@name='file1']"));
-		choosefile1.sendKeys("C:\\Users\\gopin\\Downloads\\SOLT0000000103-Urenbriefje_2022_04source.xml");
+		choosefile1.sendKeys("C:\\\\Users\\\\gopin\\\\Downloads\\\\SOLP0000005381-Urenbriefje_verzonden_2022_08_Candela_C._Grima_Rufete.xml");
 		
 		
 		Thread.sleep(5000);
 		WebElement choosefile2 = driver.findElement(By.xpath("//input[@name='file2']"));
-		choosefile2.sendKeys("C:\\Users\\gopin\\Downloads\\SOLT0000000103-Urenbriefje_2022_04_ (1).xml");
+		choosefile2.sendKeys("C:\\\\Users\\\\gopin\\\\Downloads\\\\SOLT0000008123-Urenbriefje_2022_08_Candela_C._Grima_Rufete.xml");
 		 
 	
 		Thread.sleep(5000);

@@ -21,7 +21,7 @@ public class DiffMerge extends BaseClass {
 
 		chromeBrowser();
 		
-		maxWindow();
+		
 		launchUrl("https://extendsclass.com/xml-diff.html");
 //		launchUrl("https://editor.mergely.com/");
 //		 

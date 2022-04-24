@@ -36,9 +36,9 @@ Document doc2 = db.parse(new File("C:\\Users\\gopin\\Downloads\\SOLT0000008123-U
 
 boolean hasChildNodes = doc1.hasChildNodes();
 System.out.println(hasChildNodes);
-
-Element elementById = doc1.getElementById("StaffingCustomer");
-System.out.println(elementById);
+//
+//Element elementById = doc1.getElementById("StaffingCustomer");
+//System.out.println(elementById);
 
 //String localName = doc1.getLocalName();
 //System.out.println(localName);
@@ -59,6 +59,9 @@ System.out.println(elementById);
 //System.out.println(class1);
 
 NodeList childNodes = doc1.getChildNodes();
+
+
+
 System.out.println(childNodes.getLength());
 for (int i = 0; i < childNodes.getLength(); i++) {
 	Node item = childNodes.item(i);
@@ -77,22 +80,66 @@ for (int i = 0; i < childNodes.getLength(); i++) {
 	NamedNodeMap attributes = item.getAttributes(); 
 	System.out.println(attributes.getLength());
 	for (int j = 0; j < attributes.getLength(); j++) {
-		Node item2 = attributes.item(i);
+		Node item2 = attributes.item(j);
 		String textContent = item2.getTextContent();
 		System.out.println(textContent);
 	}
+	Node nextSibling = item.getNextSibling();
+	System.out.println(nextSibling);
+	
+	NodeList childNodes2 = item.getChildNodes();
+	System.out.println(childNodes2.getLength());
+	
+	for (int j = 0; j < childNodes2.getLength(); j++) {
+		Node item2 = childNodes2.item(j);
+		
+		if (item2.getNodeType()==Node.ELEMENT_NODE) {
+			Element itemE = (Element) item2;
+			System.out.println(itemE.getTagName());
+//			System.out.println(itemE.getNodeName());
+//			System.out.println(itemE.getNodeValue());
+			
+			System.out.println(itemE.hasChildNodes());
+			if (itemE.hasChildNodes()==true) {
+				NodeList childNodes3 = itemE.getChildNodes();
+				System.out.println(childNodes3.getLength());
+				for (int k = 0; k < childNodes3.getLength(); k++) {
+					Node item3 = childNodes3.item(k);
+					if (item3.getNodeType()==Node.ELEMENT_NODE) {
+						Element itemE1 = (Element) item3;
+						
+						System.out.println(itemE1.getTagName());
+						System.out.println(itemE1.getTextContent());
+						}
+				}
+			}
+		}
+//		else if (item2.getNodeType()==Node.TEXT_NODE) {
+//			Text itemEleme=(Text) item2;
+//			System.out.println(itemEleme.getLength());
+//			System.out.println(itemEleme.getNodeName());
+//			System.out.println(itemEleme.getNodeValue());
+//	}
+//	
+//	if (nextSibling.getNodeType()==Node.ELEMENT_NODE) {
+//		Element itemEl = (Element) nextSibling;
+//		System.out.println(itemEl.getTagName());
+//	}
+}
 }
 
 NodeList elementsByTagName = doc1.getElementsByTagName("IdValue");
 System.out.println(elementsByTagName.getLength());
-for (int i = 0; i < elementsByTagName.getLength(); i++) {
-	Node item = elementsByTagName.item(i);
-	if (item.getNodeType()==Node.ELEMENT_NODE) {
-		Element itemEle = (Element) item;
+for (int i1 = 0; i1 < elementsByTagName.getLength(); i1++) {
+	Node item1 = elementsByTagName.item(i1);
+	if (item1.getNodeType()==Node.ELEMENT_NODE) {
+		Element itemEle = (Element) item1;
 		System.out.println(itemEle.getTagName());
 	}
 	
 }
+
+
 
 //	NodeList idList= doc1.getElementsByTagName("Id");
 //	NodeList idList1= doc2.getElementsByTagName("Id");

@@ -14,7 +14,7 @@ public class LoginSolid extends BaseClass {
 		
 		chromeBrowser();
 		launchUrl("https://start.solidonline.com/portal/");
-		maxWindow();
+		
 		
 		driver.findElement(By.xpath("//input[@name='lgPlanner$UserName']")).sendKeys(getFromExcel("Login", 1, 0));
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys(getFromExcel("Login", 1, 1));
